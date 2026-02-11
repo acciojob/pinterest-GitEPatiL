@@ -1,16 +1,87 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .hero{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+           
+        }
+
+        .hero-left{
+            flex:2;
+        }
+
+        .hero-left img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-right{
+            flex: 1;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .hero-right h1{
+            font-size: 36px;
+            color: #050101;
+            margin-bottom: 20px;
+        }
+        .hero-right p{
+            font-size: 18px;
+    
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        button{
+            
+            background-color: orange;
+            border: none;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="hero">
 
+        <div class="hero-left">
+
+            <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div>
+
+        <div class="hero-right">
+            <h1>Welcome to my Pinterset clone</h1>
+            <p>Discover new inspiration and save your favourite ideas</p>
+
+            <button><a href="https://www.pinterest.com/">Explore Now</a></button>
+        </div>
+    </div>
 </body>
-
 </html>
